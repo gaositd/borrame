@@ -7,10 +7,12 @@ const createWindow = () => {
     height: 600,
   });
 
-  // window.loadFile('index.html');
-  window.loadURL('https://www.youtube.com/watch?v=ir9yaSgbOdY');
+  window.loadFile('index.html');
+  // window.loadURL('https://www.youtube.com/watch?v=ir9yaSgbOdY');
 };
 
 app.whenReady()
-  .then(() => { createWindow(); })
+  .then(() => {
+    createWindow();
+  })
   .catch(() => { throw new Error;});
